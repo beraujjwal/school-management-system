@@ -9,10 +9,10 @@ const { Auth } = require('@service/auth.service');
 class usersController extends controller {
 
   /**
-     * Controller constructor
-     * @author Ujjwal Bera
-     * @param null
-     */
+   * Controller constructor
+   * @author Ujjwal Bera
+   * @param null
+   */
   constructor( ) {
     super( );
     this.User = this.db.User;
@@ -21,6 +21,11 @@ class usersController extends controller {
     autoBind( this );
   }
 
+  /**
+   * User register method
+   * @author Ujjwal Bera
+   * @param req, res
+   */
   async create(req, res) {
   
 
